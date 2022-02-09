@@ -23,3 +23,17 @@ code {
   position: relative;
   top: -100px !important;
 }
+
+.modal{
+  z-index: 1000 !important;
+  opacity: unset;
+}
+
+.active-link{
+  font-size: 16px;
+  background-color: red !important;
+  color: white !important;
+  font-weight: 500;
+  border-bottom: 2px solid red;
+  padding: 10px 30px !important;
+}
