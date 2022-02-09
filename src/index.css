@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hero-section{
+  height: 30vh;
+  background-color: rgba(255, 56, 96, 1);
+  top: -300px !important;
+  z-index: -2 ;
+}
+
+.table-section{
+  position: relative;
+  top: -100px !important;
+}
