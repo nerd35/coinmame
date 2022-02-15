@@ -7,7 +7,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import { IAssets, IAssetsIcon } from "../../utils/TypeScript";
+import { IAssets } from "../../utils/TypeScript";
 import coinInstance from "../../utils/Axios";
 import { useDidMount } from "beautiful-react-hooks";
 import NumberFormat from "react-number-format";
@@ -159,14 +159,14 @@ const TableSection = () => {
                       aria-labelledby="dropdownMenuButton1"
                     >
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <span className="dropdown-item" >
                           Buy
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <span className="dropdown-item" >
                           Sell
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>

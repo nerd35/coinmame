@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import Box from '@mui/material/Box';
 import { TextField } from '@mui/material';
-import { IAssets } from '../../utils/TypeScript';
 interface IProps {
   filterByName: (query: string)  => any
 }
