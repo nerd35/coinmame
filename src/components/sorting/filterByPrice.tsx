@@ -3,9 +3,9 @@ import Box from '@mui/material/Box';
 import { TextField } from '@mui/material';
 import { IAssets } from '../../utils/TypeScript';
 interface IProps {
-  filterByName: (query: string)  => any
+  filterByPrice: (query: string)  => any
 }
-const Sorting:FC<IProps> = ({filterByName}) => {
+const FilterByPrice:FC<IProps> = ({filterByPrice}) => {
     
   
     return (
@@ -13,11 +13,11 @@ const Sorting:FC<IProps> = ({filterByName}) => {
         {/* <button onClick={() => filterBy("name")}>Sort name</button> */}
        
 
-        <TextField id="outlined-basic" fullWidth label="Sort by Asset name" variant="outlined" onChange={e => filterByName(e.target.value)} style={{marginRight: '80px'}}/>
+        <TextField id="outlined-basic" fullWidth label="Sort by Asset Price" variant="outlined" onChange={e => filterByPrice(e.target.value)} style={{marginRight: '80px'}}/>
         
         
       </Box>
     );
 }
 
-export default Sorting;
+export default FilterByPrice;

@@ -1,4 +1,4 @@
-import { IAssets } from './TypeScript';
+import { IAssets, IAssetsIcon } from './TypeScript';
 import axios from 'axios'
 // const url = 'https://rest.coinapi.io/v1';
 
@@ -27,6 +27,13 @@ export class CoinApiService {
     return response as IAssets[]
   }
 
+  async getAssetsIcon() {
+    const response = await this.getAPI('/assets/icons/32');
+    return response as IAssetsIcon[];
+  }
+
+
+
   async getAPI(endpoint: string) {
     const res = await axios.get(`${CoinApiService.BASE_URL}${endpoint}`, {
       headers: { 'X-CoinAPI-Key': this.apiKey }
@@ -38,4 +45,4 @@ export class CoinApiService {
 }
 const coinInstance = new CoinApiService('994188B4-B06F-4AFC-9379-9292654EA646');
 
-export default  coinInstance;
+export default coinInstance;

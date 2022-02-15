@@ -40,4 +40,11 @@ export interface IAssets {
   id_icon: string
   data_start: string
   data_end: string
+  imageurl: string
+}
+
+export interface IAssetsIcon {
+    asset_id: string,
+    url: string
+ 
 }

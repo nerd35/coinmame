@@ -6,7 +6,7 @@ const MarketCapNav = () => {
     <div className="container-fluid hero-section mt-5  " style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
         <div className="container ms-auto" >
 
-        <Sorting/>
+        
         </div>
     </div>
   );
