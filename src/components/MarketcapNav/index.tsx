@@ -1,5 +1,4 @@
 import React from 'react';
-import Sorting from '../sorting';
 
 const MarketCapNav = () => {
   return (
